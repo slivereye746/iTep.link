@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainGalleryComponent } from './main-gallery.component';
+import { GalleryComponent } from './gallery.component';
 
 export const routes: Routes = [
-  { path: '', component: MainGalleryComponent}
+  { path: '', component: GalleryComponent},
 ];
 
 @NgModule({
@@ -15,4 +15,4 @@ export const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class MainGalleryRouting {}
+export class GalleryRouting {}

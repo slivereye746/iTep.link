@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: 'gallery', loadChildren: () => import('./gallery/gallery.module').then(m => m.GalleryModule)},
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent},
+  { path: 'main', loadChildren: () => import('./main-home/main-home.routing').then(m => m.MainHomeRouting)},
+  { path: '', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({

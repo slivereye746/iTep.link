@@ -11,10 +11,12 @@ export const routes: Routes = [
 
 @NgModule({
   declarations: [
+
     RayComponent,
     RayCvComponent
   ],
   imports: [
+    CommonModule,
     RouterModule.forChild(routes),
   ],
   exports: [RouterModule]

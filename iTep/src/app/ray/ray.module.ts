@@ -5,10 +5,6 @@ import { RayCvComponent } from '../ray-cv/ray-cv.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
-export const routes: Routes = [
-  { path: '', component: RayComponent}
-]
-
 @NgModule({
   declarations: [
 
@@ -17,7 +13,6 @@ export const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes),
   ],
   exports: [RouterModule]
 })

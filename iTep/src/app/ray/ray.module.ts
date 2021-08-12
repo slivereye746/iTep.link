@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RayComponent } from './ray.component';
-import { RayCvComponent } from '../ray-cv/ray-cv.component';
 
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
+import { RayComponent } from './ray.component';
+
+const routes: Routes = [
+  {
+    path: '', component: RayComponent,
+    children: [
+    ]
+  },
+];
 
 @NgModule({
-  declarations: [
-    RayComponent,
-    RayCvComponent
-  ],
+  declarations: [],
   imports: [
-    CommonModule,
-  ],
-  exports: [RouterModule]
+    CommonModule
+  ]
 })
 export class RayModule { }

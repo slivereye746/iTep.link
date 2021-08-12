@@ -3,9 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RayComponent } from './ray/ray.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    RayComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule

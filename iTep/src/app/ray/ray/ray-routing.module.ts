@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { RayGalleryComponent } from '../ray-gallery/ray-gallery.component';
 import { RayComponent } from './ray.component';
+import { RayGalleryComponent } from '../ray-gallery/ray-gallery.component';
 
 const routes: Routes = [
   {

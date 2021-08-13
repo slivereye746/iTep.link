@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
+import { RayComponent } from './ray/ray.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: 'main', component: MainComponent },
-  { path: 'ray', loadChildren:() => import('./ray/ray/ray-routing.module').then(m=>m.RayRoutingModule) }
+  { path: 'ray', component: RayComponent}
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    RouterModule.forRoot(routes)
   ],
   exports: [RouterModule]
 })

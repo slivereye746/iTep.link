@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RayGalleryComponent } from './ray-gallery.component';
+import { ProjectComponent } from './project.component';
 
-describe('RayGalleryComponent', () => {
-  let component: RayGalleryComponent;
-  let fixture: ComponentFixture<RayGalleryComponent>;
+describe('ProjectComponent', () => {
+  let component: ProjectComponent;
+  let fixture: ComponentFixture<ProjectComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RayGalleryComponent ]
+      declarations: [ ProjectComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RayGalleryComponent);
+    fixture = TestBed.createComponent(ProjectComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { QuicklinkStrategy } from 'ngx-quicklink';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full'},
-  { path: 'ray', loadChildren:() => import('./ray/ray-routing.module').then(m=>m.RayRoutingModule) }
+  { path: '', redirectTo: '/main', pathMatch: 'full' },
+  { path: 'main', component: MainComponent },
+  { path: 'ray', loadChildren:() => import('./ray/ray/ray-routing.module').then(m=>m.RayRoutingModule) }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: QuicklinkStrategy }),
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
   ],
   exports: [RouterModule]
 })

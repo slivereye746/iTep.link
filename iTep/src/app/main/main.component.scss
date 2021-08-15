@@ -7,22 +7,50 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* unvisited link */
+a:link {
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.one-page {
+  background-color: #2a2a2e;
+  margin: 0; height: 100%; overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
 .nav-bar {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
-  margin-top: 0;
   display: flex;
   align-items: center;
-  background-color: bisque;
   margin: 0;
-  a {
-    margin-left: 3em;
-  }
-  button {
-    margin-right: 3em;
+  font-size: 24px;
+  background-color: #24252B;
+
+  *{
+    margin: auto 4em;
   }
 
   .space {
@@ -31,7 +59,6 @@
 }
 
 .et {
-  height: 6000px;
   margin: 60px 30%;
   padding-top: 20px;
   background-color: rgb(193, 156, 228);
